@@ -6,4 +6,4 @@
 > 대표전화: (031)955-3333
 
 ## 문서 목록
-- code convention
+- 코드 컨벤션 관련 문서: [/docs/CODE_CONVENTION.md](../docs/CODE_CONVENTION.md)
