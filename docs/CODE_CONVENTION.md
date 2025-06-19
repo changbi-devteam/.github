@@ -57,16 +57,14 @@
         * **Maximum:** `Max`
         * **Minimum:** `Min`
     * **관리/처리 관련:**
-        * **Configuration:** `Config` or `Cfg`
+        * **Configuration:** `Config`
         * **Transaction:** `Tx`
     * **기타:**
         * **Application:** `App`
         * **Utility:** `Util`
-        * **Service:** `Svc`
-        * **Controller:** `Ctrl`
 
-    ---
 
+  
 ---
 
 ### 2. 코드 형식 (Code Formatting)
