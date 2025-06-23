@@ -12,18 +12,24 @@
 
 ### 1. 명명 규칙 (Naming Conventions)
 
-클래스와 메서드, 변수 등 일관적인 네이밍 작성법을 위한 규칙입니다.
+클래스와 메서드 작성 및 변수 선언 시 일관적인 네이밍 적용을 위한 규칙입니다.
 
 * **클래스/인터페이스:**
     * **파스칼 케이스 (PascalCase)** 를 사용합니다.
     * 명사형으로 작성하며, **약어를 사용하지 않습니다**.
-    * **예시:** `UserController`, `ProductService`, `UserRepository` 
+    * **예시:** `UserController`, `ProductService`, `UserRepository`
+    * 좋지 않은 사용 예
+      * `IUserRepository`: 인터페이스를 의미하는 대문자 I가 접두사로 입력
+      * `SeqGenRepo`: 지나친 약어 사용
+      * `userRepository`: 카멜 케이스로 클래스명을 작성
 
 * **메서드/변수:**
     * **카멜 케이스 (camelCase)** 를 사용합니다.
     * **메서드:** 동사 + 명사 형태로 작성합니다. (예: `getUserList()`, `getProductById(Long id)`)
     * **변수:** 명사 형태로 작성합니다. (예: `userName`, `productId`)
-
+    * 좋지 않은 사용 예
+      * `user_name`: 메소드/변수 명으로 파스칼 케이스 사용
+      
 * **상수:**
     * **대문자 스네이크 케이스 (UPPER_SNAKE_CASE)**를 사용합니다.
     * **예시:** `MAX_PAGE_SIZE`, `DEFAULT_ENCODING`
@@ -31,6 +37,8 @@
 * **패키지:**
     * **소문자 (lower case)**를 사용하며, 일반적으로 도메인 역순으로 작성합니다.
     * **예시:** `com.yourcompany.project.domain.user`
+    * 좋지 않은 사용 예
+      * `com.yourcompany.project.domain.user.userPoint`: 패키지 명에 대/소문자 혼용
 
 * **DTO/VO:**
     * DTO(Data Transfer Object)나 VO(Value Object)는 목적에 따라 명확한 **접미사**를 활용합니다.
